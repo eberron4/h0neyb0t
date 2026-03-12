@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${jetbrains.variable} ${inter.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${jetbrains.variable} ${inter.variable}`} style={{ backgroundColor: "#050505" }}>
+      <body className="font-sans antialiased bg-background text-foreground" style={{ backgroundColor: "#050505", color: "#ffffff" }}>
         <Navbar />
         <PageTransition>{children}</PageTransition>
       </body>

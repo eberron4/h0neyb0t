@@ -3,9 +3,9 @@
 @plugin "@tailwindcss/typography";
 
 @layer base {
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+  html, body {
+    background-color: #050505;
+    color: #ffffff;
   }
 }
 
