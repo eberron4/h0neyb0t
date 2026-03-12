@@ -20,7 +20,7 @@ export default function Hero() {
           transition={{ delay: 1.2, duration: 0.8 }}
           className="text-2xl md:text-3xl text-foreground font-sans font-medium mb-8 max-w-xl mx-auto"
         >
-          Web3 builder. Smart contract security. Blockchain infrastructure.
+          Where Web3, Blockchain Security and Cybersecurity meet. Now with a dash of AI!
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

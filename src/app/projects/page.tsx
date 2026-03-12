@@ -10,7 +10,7 @@ export default function ProjectsPage() {
   return (
     <main className="max-w-5xl mx-auto px-6 pt-28 pb-16">
       <h1 className="font-mono text-3xl text-accent mb-2">&gt;_ projects</h1>
-      <p className="text-foreground/60 mb-10">Things I&apos;ve built.</p>
+      <p className="text-foreground/60 mb-10">Creator of</p>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project, i) => (
           <ScrollReveal key={project.slug} delay={i * 0.1}>
