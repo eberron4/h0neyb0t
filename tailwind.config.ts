@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0a0a0a",
-        foreground: "#e0e0e0",
-        accent: "#00d4aa",
+        background: "#050505",
+        foreground: "#ffffff",
+        accent: "#00ffcc",
         "accent-green": "#00ff41",
         "card-border": "#1a1a2e",
         "card-bg": "#0f0f1a",
@@ -30,8 +30,8 @@ const config: Config = {
           "50%": { opacity: "0" },
         },
         glow: {
-          "0%": { boxShadow: "0 0 5px rgba(0, 212, 170, 0.3)" },
-          "100%": { boxShadow: "0 0 20px rgba(0, 212, 170, 0.6)" },
+          "0%": { boxShadow: "0 0 5px rgba(0, 255, 204, 0.3)" },
+          "100%": { boxShadow: "0 0 20px rgba(0, 255, 204, 0.6)" },
         },
       },
     },

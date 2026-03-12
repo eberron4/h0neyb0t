@@ -26,12 +26,12 @@ export default function ParticleBackground() {
         background: { color: { value: "transparent" } },
         fpsLimit: 60,
         particles: {
-          color: { value: "#00d4aa" },
+          color: { value: "#00ffcc" },
           links: {
-            color: "#00d4aa",
+            color: "#00ffcc",
             distance: 150,
             enable: true,
-            opacity: 0.2,
+            opacity: 0.4,
             width: 1,
           },
           move: {
@@ -44,9 +44,9 @@ export default function ParticleBackground() {
             density: { enable: true },
             value: 60,
           },
-          opacity: { value: 0.3 },
+          opacity: { value: 0.6 },
           shape: { type: "circle" },
-          size: { value: { min: 1, max: 3 } },
+          size: { value: { min: 2, max: 5 } },
         },
         detectRetina: true,
       }}
