@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="40%" stop-color="#071512"/>
+      <stop offset="60%" stop-color="#071512"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <!-- Hex body gradients -->
+    <linearGradient id="hex-lit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#33ffdd"/>
+      <stop offset="50%" stop-color="#00ffcc"/>
+      <stop offset="100%" stop-color="#009977"/>
+    </linearGradient>
+    <linearGradient id="hex-deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ffcc"/>
+      <stop offset="100%" stop-color="#006655"/>
+    </linearGradient>
+    <linearGradient id="hex-abd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ddaa"/>
+      <stop offset="100%" stop-color="#005544"/>
+    </linearGradient>
+    <linearGradient id="wing-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00ffcc" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="wing-grad-r" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00ffcc" stop-opacity="0.05"/>
+    </linearGradient>
+    <radialGradient id="tip-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#88ffee"/>
+      <stop offset="60%" stop-color="#00ffcc"/>
+      <stop offset="100%" stop-color="#009977"/>
+    </radialGradient>
+    <filter id="eye-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="text-glow-soft">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="url(#bg-grad)"/>
+
+  <!-- Honeycomb pattern - left side, fading out -->
+  <g stroke="#00ffcc" stroke-width="0.8" fill="none" opacity="0.08">
+    <!-- Row 1 -->
+    <polygon points="60,40 85,26 110,40 110,68 85,82 60,68"/>
+    <polygon points="110,40 135,26 160,40 160,68 135,82 110,68"/>
+    <polygon points="160,40 185,26 210,40 210,68 185,82 160,68"/>
+    <polygon points="210,40 235,26 260,40 260,68 235,82 210,68"/>
+    <polygon points="260,40 285,26 310,40 310,68 285,82 260,68"/>
+    <polygon points="310,40 335,26 360,40 360,68 335,82 310,68"/>
+    <!-- Row 2 -->
+    <polygon points="35,82 60,68 85,82 85,110 60,124 35,110"/>
+    <polygon points="85,82 110,68 135,82 135,110 110,124 85,110"/>
+    <polygon points="135,82 160,68 185,82 185,110 160,124 135,110"/>
+    <polygon points="185,82 210,68 235,82 235,110 210,124 185,110"/>
+    <polygon points="235,82 260,68 285,82 285,110 260,124 235,110"/>
+    <polygon points="285,82 310,68 335,82 335,110 310,124 285,110"/>
+    <!-- Row 3 -->
+    <polygon points="60,124 85,110 110,124 110,152 85,166 60,152"/>
+    <polygon points="110,124 135,110 160,124 160,152 135,166 110,152"/>
+    <polygon points="160,124 185,110 210,124 210,152 185,166 160,152"/>
+    <polygon points="210,124 235,110 260,124 260,152 235,166 210,152"/>
+    <polygon points="260,124 285,110 310,124 310,152 285,166 260,152"/>
+    <!-- Row 4 -->
+    <polygon points="35,166 60,152 85,166 85,194 60,208 35,194"/>
+    <polygon points="85,166 110,152 135,166 135,194 110,208 85,194"/>
+    <polygon points="135,166 160,152 185,166 185,194 160,208 135,194"/>
+    <polygon points="185,166 210,152 235,166 235,194 210,208 185,194"/>
+    <polygon points="235,166 260,152 285,166 285,194 260,208 235,194"/>
+    <!-- Row 5 -->
+    <polygon points="60,208 85,194 110,208 110,236 85,250 60,236"/>
+    <polygon points="110,208 135,194 160,208 160,236 135,250 110,236"/>
+    <polygon points="160,208 185,194 210,208 210,236 185,250 160,236"/>
+    <polygon points="210,208 235,194 260,208 260,236 235,250 210,236"/>
+    <!-- Row 6 -->
+    <polygon points="35,250 60,236 85,250 85,278 60,292 35,278"/>
+    <polygon points="85,250 110,236 135,250 135,278 110,292 85,278"/>
+    <polygon points="135,250 160,236 185,250 185,278 160,292 135,278"/>
+    <polygon points="185,250 210,236 235,250 235,278 210,292 185,278"/>
+    <!-- Row 7 -->
+    <polygon points="60,292 85,278 110,292 110,320 85,334 60,320"/>
+    <polygon points="110,292 135,278 160,292 160,320 135,334 110,320"/>
+    <polygon points="160,292 185,278 210,292 210,320 185,334 160,320"/>
+    <!-- Row 8 -->
+    <polygon points="85,334 110,320 135,334 135,362 110,376 85,362"/>
+    <polygon points="135,334 160,320 185,334 185,362 160,376 135,362"/>
+  </g>
+
+  <!-- Honeycomb pattern - right side, fading out -->
+  <g stroke="#00ffcc" stroke-width="0.8" fill="none" opacity="0.08">
+    <polygon points="1274,40 1299,26 1324,40 1324,68 1299,82 1274,68"/>
+    <polygon points="1324,40 1349,26 1374,40 1374,68 1349,82 1324,68"/>
+    <polygon points="1374,40 1399,26 1424,40 1424,68 1399,82 1374,68"/>
+    <polygon points="1424,40 1449,26 1474,40 1474,68 1449,82 1424,68"/>
+    <polygon points="1474,40 1499,26 1524,40 1524,68 1499,82 1474,68"/>
+    <polygon points="1249,82 1274,68 1299,82 1299,110 1274,124 1249,110"/>
+    <polygon points="1299,82 1324,68 1349,82 1349,110 1324,124 1299,110"/>
+    <polygon points="1349,82 1374,68 1399,82 1399,110 1374,124 1349,110"/>
+    <polygon points="1399,82 1424,68 1449,82 1449,110 1424,124 1399,110"/>
+    <polygon points="1449,82 1474,68 1499,82 1499,110 1474,124 1449,110"/>
+    <polygon points="1499,82 1524,68 1549,82 1549,110 1524,124 1499,110"/>
+    <polygon points="1274,124 1299,110 1324,124 1324,152 1299,166 1274,152"/>
+    <polygon points="1324,124 1349,110 1374,124 1374,152 1349,166 1324,152"/>
+    <polygon points="1374,124 1399,110 1424,124 1424,152 1399,166 1374,152"/>
+    <polygon points="1424,124 1449,110 1474,124 1474,152 1449,166 1424,152"/>
+    <polygon points="1474,124 1499,110 1524,124 1524,152 1499,166 1474,152"/>
+    <polygon points="1299,166 1324,152 1349,166 1349,194 1324,208 1299,194"/>
+    <polygon points="1349,166 1374,152 1399,166 1399,194 1374,208 1349,194"/>
+    <polygon points="1399,166 1424,152 1449,166 1449,194 1424,208 1399,194"/>
+    <polygon points="1449,166 1474,152 1499,166 1499,194 1474,208 1449,194"/>
+    <polygon points="1499,166 1524,152 1549,166 1549,194 1524,208 1499,194"/>
+    <polygon points="1324,208 1349,194 1374,208 1374,236 1349,250 1324,236"/>
+    <polygon points="1374,208 1399,194 1424,208 1424,236 1399,250 1374,236"/>
+    <polygon points="1424,208 1449,194 1474,208 1474,236 1449,250 1424,236"/>
+    <polygon points="1474,208 1499,194 1524,208 1524,236 1499,250 1474,236"/>
+    <polygon points="1349,250 1374,236 1399,250 1399,278 1374,292 1349,278"/>
+    <polygon points="1399,250 1424,236 1449,250 1449,278 1424,292 1399,278"/>
+    <polygon points="1449,250 1474,236 1499,250 1499,278 1474,292 1449,278"/>
+    <polygon points="1499,250 1524,236 1549,250 1549,278 1524,292 1499,278"/>
+    <polygon points="1374,292 1399,278 1424,292 1424,320 1399,334 1374,320"/>
+    <polygon points="1424,292 1449,278 1474,292 1474,320 1449,334 1424,320"/>
+    <polygon points="1474,292 1499,278 1524,292 1524,320 1499,334 1474,320"/>
+    <polygon points="1399,334 1424,320 1449,334 1449,362 1424,376 1399,362"/>
+    <polygon points="1449,334 1474,320 1499,334 1499,362 1474,376 1449,362"/>
+  </g>
+
+  <!-- Scan line effect -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="1584" y2="0" stroke="#00ffcc" stroke-width="1"/>
+    <line x1="0" y1="4" x2="1584" y2="4" stroke="#00ffcc" stroke-width="1"/>
+    <line x1="0" y1="8" x2="1584" y2="8" stroke="#00ffcc" stroke-width="1"/>
+    <line x1="0" y1="12" x2="1584" y2="12" stroke="#00ffcc" stroke-width="1"/>
+    <line x1="0" y1="16" x2="1584" y2="16" stroke="#00ffcc" stroke-width="1"/>
+  </g>
+  <rect width="1584" height="396" fill="none" style="background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,204,0.02) 2px, rgba(0,255,204,0.02) 4px)"/>
+
+  <!-- Horizontal accent line -->
+  <line x1="420" y1="340" x2="1164" y2="340" stroke="#00ffcc" stroke-width="1" stroke-opacity="0.15"/>
+  <circle cx="420" cy="340" r="2" fill="#00ffcc" fill-opacity="0.3"/>
+  <circle cx="1164" cy="340" r="2" fill="#00ffcc" fill-opacity="0.3"/>
+
+  <!-- === BEE LOGO - left of center === -->
+  <g transform="translate(420, 48) scale(0.75)" filter="url(#shadow)">
+    <!-- Antennae -->
+    <line x1="170" y1="105" x2="148" y2="62" stroke="#00ccaa" stroke-width="7" stroke-linecap="round"/>
+    <line x1="170" y1="105" x2="148" y2="62" stroke="#00ffcc" stroke-width="4" stroke-linecap="round"/>
+    <line x1="230" y1="105" x2="252" y2="62" stroke="#00ccaa" stroke-width="7" stroke-linecap="round"/>
+    <line x1="230" y1="105" x2="252" y2="62" stroke="#00ffcc" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="148" cy="60" r="11" fill="#006655"/>
+    <circle cx="148" cy="60" r="10" fill="url(#tip-glow)"/>
+    <circle cx="252" cy="60" r="11" fill="#006655"/>
+    <circle cx="252" cy="60" r="10" fill="url(#tip-glow)"/>
+
+    <!-- Wings -->
+    <ellipse cx="116" cy="170" rx="64" ry="28" transform="rotate(-20 116 170)" fill="url(#wing-grad)" stroke="#00ffcc" stroke-width="1" stroke-opacity="0.3"/>
+    <ellipse cx="284" cy="170" rx="64" ry="28" transform="rotate(20 284 170)" fill="url(#wing-grad-r)" stroke="#00ffcc" stroke-width="1" stroke-opacity="0.3"/>
+    <ellipse cx="130" cy="212" rx="44" ry="20" transform="rotate(-15 130 212)" fill="url(#wing-grad)" stroke="#00ffcc" stroke-width="0.8" stroke-opacity="0.2"/>
+    <ellipse cx="270" cy="212" rx="44" ry="20" transform="rotate(15 270 212)" fill="url(#wing-grad-r)" stroke="#00ffcc" stroke-width="0.8" stroke-opacity="0.2"/>
+
+    <!-- Head -->
+    <polygon points="200,90 231,107 231,140 200,157 169,140 169,107" fill="#005544"/>
+    <polygon points="200,88 230,105 230,138 200,155 170,138 170,105" fill="url(#hex-lit)"/>
+    <polygon points="200,88 230,105 200,110 170,105" fill="#66ffee" opacity="0.25"/>
+    <circle cx="186" cy="120" r="13" fill="#003328"/>
+    <circle cx="214" cy="120" r="13" fill="#003328"/>
+    <circle cx="186" cy="120" r="11" fill="#050505"/>
+    <circle cx="214" cy="120" r="11" fill="#050505"/>
+    <g filter="url(#eye-glow)">
+      <circle cx="186" cy="119" r="6" fill="#00ffdd"/>
+      <circle cx="214" cy="119" r="6" fill="#00ffdd"/>
+    </g>
+    <circle cx="183" cy="116" r="2.5" fill="#ffffff" opacity="0.5"/>
+    <circle cx="211" cy="116" r="2.5" fill="#ffffff" opacity="0.5"/>
+
+    <!-- Thorax -->
+    <polygon points="200,154 239,174 239,214 200,234 161,214 161,174" fill="#005544"/>
+    <polygon points="200,152 238,172 238,212 200,232 162,212 162,172" fill="url(#hex-deep)"/>
+    <polygon points="200,152 238,172 200,178 162,172" fill="#44ffdd" opacity="0.2"/>
+    <polygon points="200,168 218,178 218,198 200,208 182,198 182,178" fill="#050505" opacity="0.45"/>
+    <circle cx="200" cy="188" r="4" fill="#00ffcc" opacity="0.3"/>
+
+    <!-- Abdomen 1 -->
+    <polygon points="200,232 234,248 234,280 200,296 166,280 166,248" fill="#004838"/>
+    <polygon points="200,230 233,246 233,278 200,294 167,278 167,246" fill="url(#hex-abd)"/>
+    <polygon points="200,230 233,246 200,252 167,246" fill="#33ddbb" opacity="0.18"/>
+    <rect x="172" y="256" width="56" height="11" rx="2" fill="#050505" opacity="0.5"/>
+
+    <!-- Abdomen 2 -->
+    <polygon points="200,293 227,306 227,332 200,345 173,332 173,306" fill="#003830"/>
+    <polygon points="200,291 226,304 226,330 200,343 174,330 174,304" fill="url(#hex-abd)" opacity="0.85"/>
+    <polygon points="200,291 226,304 200,308 174,304" fill="#33ddbb" opacity="0.12"/>
+    <rect x="179" y="312" width="42" height="9" rx="2" fill="#050505" opacity="0.45"/>
+
+    <!-- Stinger -->
+    <polygon points="190,341 210,341 200,368" fill="#007755"/>
+    <polygon points="193,341 207,341 200,364" fill="#00aa88"/>
+    <polygon points="198,341 202,341 200,360" fill="#00ffcc" opacity="0.3"/>
+  </g>
+
+  <!-- === TEXT - right of bee === -->
+  <g filter="url(#text-glow)">
+    <text x="980" y="175" text-anchor="middle"
+          font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Courier New', monospace"
+          font-size="64" font-weight="700" fill="#00ffcc"
+          letter-spacing="6">h0neyb0t</text>
+  </g>
+  <g filter="url(#text-glow-soft)">
+    <text x="980" y="220" text-anchor="middle"
+          font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Courier New', monospace"
+          font-size="18" font-weight="400" fill="#00ffcc" fill-opacity="0.5"
+          letter-spacing="8">CYBERSECURITY // BLOCKCHAIN // AI</text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="980" y="260" text-anchor="middle"
+        font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Courier New', monospace"
+        font-size="14" font-weight="300" fill="#ffffff" fill-opacity="0.3"
+        letter-spacing="3">SECURING ON-CHAIN VALUE</text>
+
+  <!-- Top edge glow line -->
+  <rect x="0" y="0" width="1584" height="2" fill="#00ffcc" opacity="0.15"/>
+  <!-- Bottom edge glow line -->
+  <rect x="0" y="394" width="1584" height="2" fill="#00ffcc" opacity="0.1"/>
+</svg>

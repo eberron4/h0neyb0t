@@ -17,6 +17,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "h0neyb0t",
   description: "Web3 & Blockchain Portfolio",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/h0neyb0t-avatar.png",
+  },
 };
 
 export default function RootLayout({

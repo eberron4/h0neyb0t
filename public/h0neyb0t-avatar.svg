@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Top-down lighting gradient for hexagons -->
+    <linearGradient id="hex-lit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#33ffdd"/>
+      <stop offset="50%" stop-color="#00ffcc"/>
+      <stop offset="100%" stop-color="#009977"/>
+    </linearGradient>
+    <!-- Deeper shading for lower body -->
+    <linearGradient id="hex-deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ffcc"/>
+      <stop offset="100%" stop-color="#006655"/>
+    </linearGradient>
+    <!-- Abdomen gradient -->
+    <linearGradient id="hex-abd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ddaa"/>
+      <stop offset="100%" stop-color="#005544"/>
+    </linearGradient>
+    <!-- Wing gradient -->
+    <linearGradient id="wing-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00ffcc" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="wing-grad-r" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00ffcc" stop-opacity="0.05"/>
+    </linearGradient>
+    <!-- Eye glow -->
+    <filter id="eye-glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Drop shadow for depth -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <!-- Antenna tip glow -->
+    <radialGradient id="tip-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#88ffee"/>
+      <stop offset="60%" stop-color="#00ffcc"/>
+      <stop offset="100%" stop-color="#009977"/>
+    </radialGradient>
+    <!-- Background subtle radial -->
+    <radialGradient id="bg-glow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#0a1a18"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background with subtle center glow -->
+  <circle cx="200" cy="200" r="200" fill="url(#bg-glow)"/>
+
+  <!-- === BEE with depth === -->
+  <g transform="translate(0, -5)" filter="url(#shadow)">
+
+    <!-- Antennae with gradient thickness -->
+    <line x1="170" y1="105" x2="148" y2="62" stroke="#00ccaa" stroke-width="7" stroke-linecap="round"/>
+    <line x1="170" y1="105" x2="148" y2="62" stroke="#00ffcc" stroke-width="4" stroke-linecap="round"/>
+    <line x1="230" y1="105" x2="252" y2="62" stroke="#00ccaa" stroke-width="7" stroke-linecap="round"/>
+    <line x1="230" y1="105" x2="252" y2="62" stroke="#00ffcc" stroke-width="4" stroke-linecap="round"/>
+    <!-- Antenna tips with radial glow -->
+    <circle cx="148" cy="60" r="11" fill="#006655"/>
+    <circle cx="148" cy="60" r="10" fill="url(#tip-glow)"/>
+    <circle cx="252" cy="60" r="11" fill="#006655"/>
+    <circle cx="252" cy="60" r="10" fill="url(#tip-glow)"/>
+
+    <!-- Wings - filled with gradient for depth -->
+    <ellipse cx="116" cy="170" rx="64" ry="28" transform="rotate(-20 116 170)"
+             fill="url(#wing-grad)" stroke="#00ffcc" stroke-width="1" stroke-opacity="0.3"/>
+    <ellipse cx="284" cy="170" rx="64" ry="28" transform="rotate(20 284 170)"
+             fill="url(#wing-grad-r)" stroke="#00ffcc" stroke-width="1" stroke-opacity="0.3"/>
+    <ellipse cx="130" cy="212" rx="44" ry="20" transform="rotate(-15 130 212)"
+             fill="url(#wing-grad)" stroke="#00ffcc" stroke-width="0.8" stroke-opacity="0.2"/>
+    <ellipse cx="270" cy="212" rx="44" ry="20" transform="rotate(15 270 212)"
+             fill="url(#wing-grad-r)" stroke="#00ffcc" stroke-width="0.8" stroke-opacity="0.2"/>
+
+    <!-- HEAD - 3D hex with highlight -->
+    <!-- Shadow layer -->
+    <polygon points="200,90 231,107 231,140 200,157 169,140 169,107"
+             fill="#005544"/>
+    <!-- Main face -->
+    <polygon points="200,88 230,105 230,138 200,155 170,138 170,105"
+             fill="url(#hex-lit)"/>
+    <!-- Top highlight bevel -->
+    <polygon points="200,88 230,105 200,110 170,105"
+             fill="#66ffee" opacity="0.25"/>
+
+    <!-- Eyes - recessed dark sockets -->
+    <circle cx="186" cy="120" r="13" fill="#003328"/>
+    <circle cx="214" cy="120" r="13" fill="#003328"/>
+    <circle cx="186" cy="120" r="11" fill="#050505"/>
+    <circle cx="214" cy="120" r="11" fill="#050505"/>
+    <!-- Glowing pupils -->
+    <g filter="url(#eye-glow)">
+      <circle cx="186" cy="119" r="6" fill="#00ffdd"/>
+      <circle cx="214" cy="119" r="6" fill="#00ffdd"/>
+    </g>
+    <!-- Tiny specular highlight -->
+    <circle cx="183" cy="116" r="2.5" fill="#ffffff" opacity="0.5"/>
+    <circle cx="211" cy="116" r="2.5" fill="#ffffff" opacity="0.5"/>
+
+    <!-- THORAX - 3D hex -->
+    <polygon points="200,154 239,174 239,214 200,234 161,214 161,174"
+             fill="#005544"/>
+    <polygon points="200,152 238,172 238,212 200,232 162,212 162,172"
+             fill="url(#hex-deep)"/>
+    <!-- Top bevel -->
+    <polygon points="200,152 238,172 200,178 162,172"
+             fill="#44ffdd" opacity="0.2"/>
+    <!-- Center inset -->
+    <polygon points="200,168 218,178 218,198 200,208 182,198 182,178"
+             fill="#050505" opacity="0.45"/>
+    <!-- Center dot -->
+    <circle cx="200" cy="188" r="4" fill="#00ffcc" opacity="0.3"/>
+
+    <!-- ABDOMEN 1 -->
+    <polygon points="200,232 234,248 234,280 200,296 166,280 166,248"
+             fill="#004838"/>
+    <polygon points="200,230 233,246 233,278 200,294 167,278 167,246"
+             fill="url(#hex-abd)"/>
+    <!-- Top bevel -->
+    <polygon points="200,230 233,246 200,252 167,246"
+             fill="#33ddbb" opacity="0.18"/>
+    <!-- Dark stripe band -->
+    <rect x="172" y="256" width="56" height="11" rx="2" fill="#050505" opacity="0.5"/>
+
+    <!-- ABDOMEN 2 -->
+    <polygon points="200,293 227,306 227,332 200,345 173,332 173,306"
+             fill="#003830"/>
+    <polygon points="200,291 226,304 226,330 200,343 174,330 174,304"
+             fill="url(#hex-abd)" opacity="0.85"/>
+    <!-- Top bevel -->
+    <polygon points="200,291 226,304 200,308 174,304"
+             fill="#33ddbb" opacity="0.12"/>
+    <!-- Dark stripe -->
+    <rect x="179" y="312" width="42" height="9" rx="2" fill="#050505" opacity="0.45"/>
+
+    <!-- Stinger with gradient -->
+    <polygon points="190,341 210,341 200,368"
+             fill="#007755"/>
+    <polygon points="193,341 207,341 200,364"
+             fill="#00aa88"/>
+    <!-- Stinger highlight -->
+    <polygon points="198,341 202,341 200,360"
+             fill="#00ffcc" opacity="0.3"/>
+
+  </g>
+</svg>
