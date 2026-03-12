@@ -18,7 +18,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="text-xl text-foreground/70 font-sans mb-8 max-w-lg mx-auto"
+          className="text-2xl md:text-3xl text-foreground/90 font-sans font-medium mb-8 max-w-xl mx-auto"
         >
           Web3 builder. Smart contract security. Blockchain infrastructure.
         </motion.p>
@@ -30,13 +30,13 @@ export default function Hero() {
         >
           <Link
             href="/projects"
-            className="px-6 py-3 border border-accent text-accent font-mono text-sm hover:bg-accent/10 transition-all hover:shadow-[0_0_15px_rgba(0,212,170,0.3)]"
+            className="px-8 py-4 border border-accent text-accent font-mono text-base font-semibold hover:bg-accent/10 transition-all hover:shadow-[0_0_15px_rgba(0,212,170,0.3)]"
           >
             view projects
           </Link>
           <Link
             href="/blog"
-            className="px-6 py-3 border border-foreground/20 text-foreground/70 font-mono text-sm hover:border-foreground/40 transition-all"
+            className="px-8 py-4 border border-foreground/30 text-foreground/90 font-mono text-base font-semibold hover:border-foreground/50 transition-all"
           >
             read blog
           </Link>
